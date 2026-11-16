@@ -1,0 +1,30 @@
+# Rising Yields
+
+> Build a business that yields more. Rising Yields is a strategic business advisory company that helps owners start, improve, grow, or redirect businesses, connecting Business Intelligence and Financial Intelligence. Operating principle: diagnose before prescribing. Serves owners remotely across the lower 48 U.S. states. No public pricing; no guaranteed outcomes.
+
+## Paths
+- [Business & Profit / Doc Profit](https://risingyields.com/business-profit.html): business diagnosis, Right Fit Meeting, Business Yield Assessment, Profit Acceleration (details: https://docprofit.biz)
+- [Financial Clarity](https://risingyields.com/financial-clarity.html): reliable books, analysis, budgets, projections, cash flow
+- [Start Here](https://risingyields.com/start-here.html): for owners who need both or are not sure
+
+## Offers
+- [The Launch Factory](https://risingyields.com/launch-factory.html): A 90-day business creation process designed to take an idea from concept to launch with profitability, structure, systems, and financial discipline built into the foundation.
+- [Business Yield Assessment](https://risingyields.com/business-profit.html): A paid diagnostic used when deeper investigation is warranted, to move beyond presenting symptoms, identify meaningful constraints and opportunities, and determine the strongest starting point.
+- [Profit Acceleration](https://risingyields.com/business-profit.html): Tools that examine pricing, margins, conversion, customer economics, expenses, productivity, efficiency, retention, waste, and underused resources. Profitability Simulation outputs are potential outcomes, not guarantees.
+- [Financial Clarity](https://risingyields.com/financial-clarity.html): Financial interpretation, common-size analysis, budgeting and projections, cash-flow visibility and planning, scenario analysis, and resource allocation within approved scope.
+- [Bookkeeping & Accounting](https://risingyields.com/bookkeeping-accounting.html): Bookkeeping, cleanup, QuickBooks Online, reconciliations, month-end close, core financial reporting, payroll coordination, and related accounting operations within approved scope.
+- [Leadership & Team Development](https://risingyields.com/business-profit.html): Strengthen the people and leadership the business depends on: leadership effectiveness, communication, accountability, roles, decision-making, and less owner dependence in day-to-day operations.
+- [Digital Acceleration](https://risingyields.com/business-profit.html): Use technology to strengthen how the business operates and grows: workflow, visibility, connected tools and processes, and less unnecessary manual work.
+- [DFY Marketing Suite](https://risingyields.com/business-profit.html): A connected, done-for-you marketing system supporting the customer journey when stronger demand is part of the path forward: campaigns, landing pages and follow-up funnels, multi-channel messaging, and ROI tracking tied to profit.
+- [Financial Education](https://risingyields.com/financial-clarity.html): Helps owners understand the financial mechanics behind their business so the numbers become useful tools for decision-making.
+- [CFO Strategy & Advisory](https://risingyields.com/financial-clarity.html): Forward-looking financial work: budgeting, forecasting, scenario planning, cash-flow visibility, resource allocation, and connecting financial decisions to business priorities.
+- [Exit Acceleration](https://risingyields.com/exit-acceleration.html): Helps owners increase profitability, reduce owner dependency, strengthen systems, and build a more valuable and transferable company. No valuation or exit outcome is guaranteed.
+
+## Company
+- [How Rising Yields Works](https://risingyields.com/how-it-works.html)
+- [About](https://risingyields.com/about.html): founded by a brother and sister; Jak (Jackop Lehtonen) leads business/Doc Profit, Nicole leads financial
+- [FAQ](https://risingyields.com/resources.html) · [Glossary](https://risingyields.com/glossary.html) · [Guides](https://risingyields.com/guides/)
+- [Locations](https://risingyields.com/locations/): 48 states, 76 metros
+
+## Full text
+- [llms-full.txt](https://risingyields.com/llms-full.txt)
