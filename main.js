@@ -164,3 +164,16 @@
   });
   d.addEventListener("close", function () { document.body.classList.remove("bio-open"); });
 })();
+
+/* Private client review mode: open any page with ?review=ry-edits-5827b5 (remembered on this device; ?review=off to exit) */
+(function () {
+  "use strict";
+  var q = new URLSearchParams(location.search).get("review"), on = false;
+  try {
+    if (q === "ry-edits-5827b5") localStorage.setItem("ry-review", "1");
+    if (q === "off") localStorage.removeItem("ry-review");
+    on = localStorage.getItem("ry-review") === "1";
+  } catch (e) { on = q === "ry-edits-5827b5"; }
+  if (!on || document.querySelector('script[src$="review.js"]')) return;
+  var s = document.createElement("script"); s.src = "/review.js"; s.defer = true; document.body.appendChild(s);
+})();
