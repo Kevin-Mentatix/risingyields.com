@@ -105,14 +105,13 @@
       new FormData(form).forEach(function (v, k) { if (k === "wants") wants.push(v); else params.append(k, v); });
       if (wants.length) params.append("wants", wants.join(", "));
       var btn = form.querySelector('[type="submit"]'); if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = "Sending…"; }
-      var key = form.getAttribute("data-w3f"), req;
-      if (key) {
-        // Web3Forms (static hosting): JSON POST, emailed to the inbox tied to the access key.
-        var payload = { access_key: key, subject: form.getAttribute("data-subject") || "New website inquiry", from_name: "Rising Yields website", page: location.href };
-        params.forEach(function (v, k) { if (k !== "form-name" && k !== "bot-field") payload[k] = v; });
-        if (form.querySelector('[name="bot-field"]') && form.querySelector('[name="bot-field"]').value) payload.botcheck = true;
-        req = fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(payload) })
-          .then(function (r) { return r.json(); }).then(function (j) { if (!j.success) throw new Error(j.message || "send failed"); });
+      var endpoint = form.getAttribute("data-endpoint"), req;
+      if (endpoint) {
+        // Google Apps Script: logs the inquiry to the shared sheet and emails the team a formatted summary.
+        params.append("page", location.pathname);
+        req = fetch(endpoint, { method: "POST", body: params })
+          .then(function (r) { return r.json(); })
+          .then(function (j) { if (!j.ok) throw new Error(j.error || "send failed"); });
       } else {
         req = fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: params.toString() })
           .then(function (r) { if (!r.ok) throw new Error(r.status); });

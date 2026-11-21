@@ -90,7 +90,7 @@ No. The goal is to build profitability, structure, and financial discipline into
 Business & Profit is how Rising Yields helps owners build, strengthen, or reshape a business: The Launch Factory, the Business Yield Assessment, Profit Acceleration, Leadership & Team Development, Digital Acceleration, the DFY Marketing Suite, and Exit Acceleration. You do not need to know which capability you need; Rising Yields helps determine the right starting point.
 
 ### Where does DocProfit.biz fit?
-DocProfit.biz is the focused web destination for Rising Yields' Doc Profit methodology and the business/profit side of Rising Yields. It covers the Right Fit Meeting, Business Yield Assessment, Profit Acceleration, business diagnosis, strategy, and related implementation.
+DocProfit.biz is the focused web destination for the Rising Yields Profit methodology and the business/profit side of Rising Yields. It covers the Right Fit Meeting, Business Yield Assessment, Profit Acceleration, business diagnosis, strategy, and related implementation.
 
 ### What is the Right Fit Meeting?
 The Right Fit Meeting is the initial qualification conversation. It determines what the owner wants, what appears to be happening, whether Rising Yields may be able to help, and whether deeper investigation is warranted. It is not the full diagnostic.
@@ -103,9 +103,6 @@ Profit Acceleration examines where additional economic value may already exist i
 
 ### Is the Profitability Simulation a guarantee?
 No. The Profitability Simulation models how changes in key business drivers could affect profit. Simulated outcomes are potential outcomes, not guarantees.
-
-### Is Doc Profit a medical service?
-No. Doc Profit is Rising Yields' diagnostic-first business methodology. It is not a separate company, a medical service, or a medical credential. The name reflects one principle: diagnose before prescribing.
 
 ## Summary
 Financial Clarity is the financial side of Rising Yields: Bookkeeping & Accounting, Financial Clarity, Financial Education, and CFO Strategy & Advisory. Reliable numbers come first; from there, Rising Yields helps you understand what they mean, use them to plan, and connect financial decisions to what you want from the business.
@@ -183,7 +180,7 @@ Rising Yields is a business-support company built to help owners start, improve,
 No. Each side can stand on its own. Some owners need business strategy or Profit Acceleration. Others need reliable books or financial planning. Some need both. Rising Yields determines the appropriate starting point instead of forcing every client through the same path.
 
 ### Where does DocProfit.biz fit?
-DocProfit.biz is the focused web destination for Rising Yields’ Doc Profit methodology and the business/profit side of Rising Yields. It covers the Right Fit Meeting, Business Yield Assessment, Profit Acceleration, business diagnosis, strategy, and related implementation.
+DocProfit.biz is the focused web destination for the Rising Yields Profit methodology and the business/profit side of Rising Yields. It covers the Right Fit Meeting, Business Yield Assessment, Profit Acceleration, business diagnosis, strategy, and related implementation.
 
 ### What if my books are not ready?
 The next step may be cleanup or bookkeeping work before deeper analysis, projections, or strategy depends on numbers that are not reliable enough.
@@ -229,9 +226,6 @@ How much of a business's revenue depends on a small number of customers. High co
 ### Diagnose before prescribing
 Rising Yields' operating principle. The presenting problem may be the real problem, or only where a deeper problem is showing itself, so Rising Yields looks for evidence before recommending any predetermined answer such as more marketing, lower costs, new software, more employees, or new systems.
 
-### Doc Profit
-Rising Yields' diagnostic-first business methodology. Doc Profit is not a separate company and not a medical service or credential. Its focused web destination is DocProfit.biz. Business & Profit
-
 ### Exit Acceleration
 Rising Yields' work to increase profitability, reduce owner dependency, strengthen systems, and build a more valuable and transferable company, so the owner has options: keep it, grow it, step back, pass it on, or sell it. No valuation or exit outcome is guaranteed. Exit Acceleration
 
@@ -257,7 +251,7 @@ Rising Yields' body of work and tools for finding where additional economic valu
 Modeling of how changes in important business drivers could affect profit. Simulated outcomes are potential outcomes, not guarantees.
 
 ### Right Fit Meeting
-The initial qualification conversation on the Doc Profit side of Rising Yields. It determines what the owner wants, what appears to be happening, whether Rising Yields may be able to help, and whether deeper investigation is warranted. It is not the full diagnostic.
+The initial qualification conversation on the Business & Profit side of Rising Yields. It determines what the owner wants, what appears to be happening, whether Rising Yields may be able to help, and whether deeper investigation is warranted. It is not the full diagnostic.
 
 ### Scenario analysis
 Comparing how a business's finances could look under different assumptions, such as a price change, a new hire, or a slower season, so an owner can weigh options before committing.
