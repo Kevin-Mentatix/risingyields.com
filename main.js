@@ -149,19 +149,42 @@
   if (/^#bio-/.test(location.hash)) open(location.hash.slice(1));
 })();
 
-/* Profit Simulator pop-up (Business & Profit): loads the licensed simulator on first open */
+/* Profit Simulator (Business & Profit): on-page model, same math as the client's ProfitSimSection */
 (function () {
   "use strict";
-  var d = document.getElementById("sim-modal");
-  if (!d || !d.showModal) return;
-  var f = d.querySelector("iframe");
-  document.addEventListener("click", function (e) {
-    if (e.target.closest("[data-sim]")) {
-      if (!f.src) f.src = f.getAttribute("data-src");
-      d.showModal(); document.body.classList.add("bio-open");
-    } else if (e.target === d || (e.target.closest("[data-close]") && e.target.closest("#sim-modal"))) d.close();
+  var root = document.querySelector("[data-simulator]");
+  if (!root) return;
+  var DEF = { revenue: 1000000, gross: 40, net: 10, price: 3, cost: 3, conv: 5 };
+  var inp = {}; root.querySelectorAll("[data-sim-in]").forEach(function (el) { inp[el.getAttribute("data-sim-in")] = el; });
+  var fmt = function (n) { return Math.round(n).toLocaleString("en-US"); };
+  var out = function (k, v) { root.querySelectorAll('[data-sim-out="' + k + '"]').forEach(function (el) { el.textContent = v; }); };
+  var num = function (k) { var v = Number(inp[k].value); return isFinite(v) ? v : 0; };
+  function calc() {
+    var revenue = Math.max(0, num("revenue")), gross = Math.max(0, Math.min(100, num("gross"))), net = Math.max(0, Math.min(100, num("net")));
+    var price = num("price"), cost = num("cost"), conv = num("conv");
+    root.querySelectorAll("[data-sim-show]").forEach(function (el) { el.textContent = num(el.getAttribute("data-sim-show")); });
+    var netNow = revenue * net / 100, expenses = revenue - netNow;
+    var addedFromPrice = revenue * price / 100, priceProfit = addedFromPrice * 0.95;          // price increase ~95% to bottom line
+    var costProfit = expenses * cost / 100 * 0.9;                                                // ~90% of cost cut drops to net
+    var addedRevConv = revenue * conv / 100, convProfit = addedRevConv * ((gross || 30) / 100) * 0.75; // gross-margin pass-through
+    var total = priceProfit + costProfit + convProfit, netTotal = netNow + total;
+    out("priceProfit", fmt(priceProfit)); out("costProfit", fmt(costProfit)); out("convProfit", fmt(convProfit));
+    out("total", fmt(total));
+    out("pct", (netNow > 0 ? total / netNow * 100 : 0).toFixed(1));
+    out("mult", (netNow > 0 ? netTotal / netNow : 1).toFixed(2));
+    out("rev", fmt(revenue)); out("revUp", fmt(addedRevConv + addedFromPrice)); out("revTotal", fmt(revenue + addedRevConv + addedFromPrice));
+    out("netNow", fmt(netNow)); out("netTotal", fmt(netTotal)); out("five", fmt(total * 5));
+  }
+  root.addEventListener("input", calc);
+  root.querySelector("[data-sim-reset]").addEventListener("click", function () {
+    Object.keys(DEF).forEach(function (k) { inp[k].value = DEF[k]; }); calc();
   });
-  d.addEventListener("close", function () { document.body.classList.remove("bio-open"); });
+  var tracked = false;
+  root.addEventListener("input", function () {
+    if (tracked) return; tracked = true;
+    (window.dataLayer = window.dataLayer || []).push({ event: "simulator_used" });
+  });
+  calc();
 })();
 
 /* Private client review mode: open any page with ?review=ry-edits-5827b5 (remembered on this device; ?review=off to exit) */
